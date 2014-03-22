@@ -1,0 +1,75 @@
+/***************************************
+  * http://www.program-o.com
+  * PROGRAM O
+  * Version: 2.3.1
+  * FILE: help.css
+  * AUTHOR: Elizabeth Perreau and Dave Morton
+  * DATE: 06-10-2013
+  * DETAILS: Provides style and presentation settings for the help page
+  ***************************************/
+div.row { clear: both; padding-top: 8px; border: none; width: 95%; margin-left: auto; margin-right: auto; }
+div.row span.label {float: left; width: 49.5%; text-align: left; padding-left: 3px; background-color: #DDFFFF; border: 1px outset #999; padding-top: 3px; padding-bottom: 3px;}
+div.row span.label:hover, div.row span.formw:hover {background-color: #EEE;}
+.center { text-align: center; }
+.bold { font-weight: bold; }
+.underline {border: 2px outset #666;border-top: 1px outset #666; border-left: 1px outset #666;}
+.big { font-size: larger; }
+#container{
+  margin: 0 auto;
+  padding: 1em;
+  text-align: left;
+  background-color: white;
+  overflow: auto;
+}
+      div.row {
+        width: 98%;
+      }
+      div.row span.label {
+        width: 25%;
+        margin-right: 12px;
+      }
+      .big {
+        font-size: x-large;
+      }
+      .description {
+        background-color: transparent;
+        margin-left: 28%;
+        clear: right;
+        width: 72%;
+      }
+      .description:hover {
+        background-color: transparent;
+      }
+      .row:hover {
+        background-color: #DDD;
+      }
+      .highlighted {
+        background-color: #66CCFF;
+      }
+      .highlighted:hover {
+        background-color: #FFFFAA;
+      }
+      .red {
+        color: red;
+        font-weight: bold;
+      }
+      row.underline {border: 2px outset #666;border-top: 1px outset #666; border-left: 1px outset #666;}
+@media screen and (max-width: 1280px){
+  body {
+    padding: 0;
+    overflow: auto;
+  }
+
+  #container {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  #form_table {
+    width: 100%;
+    margin: 0;
+  }
+
+}
