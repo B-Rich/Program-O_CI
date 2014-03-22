@@ -4,7 +4,7 @@
  * Written/Coded by Dave Morton
  * ©2013-2014 The Program O Group
  * Written 12-02-2013
- * README.MD
+ * README
  * Provides an overview of the script, along with basic instructions on installation and use
  ****************************************************/
 
@@ -22,9 +22,9 @@ Using the bot
 ---------------------------------------------------------
 After installation you can chat with your Program O chatbot using one of three methods:
 
-- Directly through your chatbot's URL (e.g. http://www.example/com/path/to/your/chatbot)
-- Through an AJAX enabled web page that points to the API(e.g. http://www.example/com/path/to/your/chatbot/API)
-- Through the Program O API (example in /gui/xml/index.php)
+ * Directly through your chatbot's URL (e.g. http://www.example/com/path/to/your/chatbot)
+ * Through an AJAX enabled web page that points to the API(e.g. http://www.example/com/path/to/your/chatbot/API)
+ * Through the Program O API (example in /gui/xml/index.php)
 
 For advanced botmasters and programmers, it is possible to use the Program O API to access a chatbot from stand-alone applications through HTTP requests. for information on how to create and/or use such a stand-alone application, please visit the Program O Support Forums at http://www.program-o.com
 
