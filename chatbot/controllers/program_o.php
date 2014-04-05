@@ -23,7 +23,7 @@ class Program_o extends CI_Controller
   function index()
   {
     $data['pageTitle'] = 'Program O Interface';
-      $is_installed = ($this->config['is_installed']) ? 'true' : 'false';
+      $is_installed = ($this->config->item('is_installed')) ? 'true' : 'false';
     $data['content'] = "This is the main interface in it's infancy. is_installed = $is_installed";
     $data['lowerScript'] = '';
     $this->load->view('view_main', $data);

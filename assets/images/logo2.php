@@ -56,6 +56,5 @@
   header('Content-type: image/png');
   imagepng($bkg, null, 0);
   imagedestroy($bkg);
-  imagedestroy($ovl);
 
 ?>

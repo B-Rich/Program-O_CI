@@ -9,10 +9,11 @@ DB_active_rec.php
 .idea/*
 
 #################
-## Codeigniter Logs
+## Codeigniter Logs and config
 #################
 
 chatbot/logs/log-*.php
+chatbot/config/database.php
 
 #################
 ## Eclipse
