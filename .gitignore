@@ -1,9 +1,18 @@
 #################
+## PhpStorm
+#################
+
+CI_phpStorm.php
+my_models.php
+DB_active_rec.php
+.idea/
+.idea/*
+
+#################
 ## Codeigniter Logs
 #################
 
 chatbot/logs/log-*.php
-
 
 #################
 ## Eclipse
