@@ -4,9 +4,9 @@ $active_group = 'default';
 
 $db = array();
 $db['default'] = array();
-$db['default']['hostname'] = 'dmorton';
-$db['default']['username'] = 'Dave';
-$db['default']['password'] = 'DJM01@dmorton';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = '';
+$db['default']['password'] = '';
 $db['default']['database'] = 'pgo_ci';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
