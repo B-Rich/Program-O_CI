@@ -12,8 +12,9 @@ DB_active_rec.php
 ## Codeigniter Logs and config
 #################
 
-chatbot/logs/log-*.php
-chatbot/config/database.php
+*/chatbot/logs/log-*.php
+*/chatbot/config/database.php
+
 
 #################
 ## Eclipse
