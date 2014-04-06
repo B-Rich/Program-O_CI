@@ -2,5 +2,6 @@ RewriteEngine on
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond $1 !^(index\.php|images|assets|robots\.txt)
+RewriteCond %{REQUEST_METHOD}  !=POST
 RewriteRule ^(.*)$ ./index.php/$1 [L]
 

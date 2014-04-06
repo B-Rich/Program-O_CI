@@ -15,7 +15,7 @@
 
     function index()
     {
-      if (!empty($_POST)) exit('<pre>' . print_r($_POST, true));
+      //if (!empty($_POST)) exit('<pre>' . print_r($_POST, true));
       if ($this->input->post('action') !== false)
       {
         $action = $this->input->post('action');

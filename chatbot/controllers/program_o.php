@@ -24,13 +24,14 @@ class Program_o extends CI_Controller
   {
     if(false === $this->config->item('is_installed'))
     {
-      header('Location: ./install');
+      redirect('install');
     }
     else{
       $is_installed = ($this->config->item('is_installed')) ? 'true' : 'false';
       $data['pageTitle'] = 'Program O Interface';
-      $data['content'] = "This is the main interface in it's infancy. is_installed = $is_installed";
-      $data['lowerScript'] = '';
+      $data['content'] = $this->load->view('view_chatForm', null, true);
+      $data['lowerScript'] = $this->load->view('view_chat_js.php', null, true);
+      //$data['lowerScript'] = '';
       $this->load->view('view_main', $data);
     }
   }

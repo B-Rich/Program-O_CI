@@ -49,4 +49,4 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 $config['use_membership'] = false;
 $config['require_membership'] = FALSE;
-$config['is_installed'] = false;
+$config['is_installed'] = true;

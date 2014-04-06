@@ -22,7 +22,7 @@ class Admin extends CI_Controller
 
   function index()
   {
-    $is_installed = (isset($this->config->config['is_installed'])) ? $this->config->config['is_installed'] : false;
+    $is_installed = (false !== $this->config->item('is_installed')) ? $this->config->item('is_installed') : false;
     if (!$is_installed) redirect('install');
     $logged_in = $this->session->userdata('logged_in');
     $info['errMsg'] = $this->session->userdata('error');
