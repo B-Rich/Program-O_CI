@@ -1,5 +1,5 @@
 ﻿<?php
-
+header('Content-type: application/json');
 $post = filter_input_array(INPUT_POST);
 /*
 switch (true)
@@ -18,7 +18,7 @@ switch (true)
     echo 'WTF?!?!?!';
 }
 */
-//echo "You said '{$post['say']}'";
-//print_r($post);
-print_r($_POST);
-?>
+$response = $post['say'];
+$out = array('botsay' => "You said, '$response'.", 'botName' => 'TestBot');
+echo json_encode($out);
+

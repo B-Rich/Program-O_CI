@@ -16,7 +16,7 @@
     <title><?php echo $pageTitle ?></title>
     <link rel="shortcut icon" href="<?php echo base_url('assets/images') ?>/favicon.ico" />
     <link rel="stylesheet" href="<?php echo base_url('assets') ?>/jquery-ui.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/program_o2.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/program_o.css" type="text/css" />
   </head>
   <body>
     <div class="errMsg"><?php echo (isset($errMsg)) ? $errMsg : '' ?></div>

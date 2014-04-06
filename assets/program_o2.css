@@ -287,10 +287,11 @@ div.row { clear: both; padding-top: 8px; border: none; width: 98%; margin-left: 
   padding-top: 8px;
   border: none;
   width: 98%;
-  margin-top: 9px;
+  margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 2px 2px 6px #000, inset 2px 2px 4px #FFF, inset -1px -1px 4px #000;
+  box-shadow: 2px 2px 6px 1px #000, inset 4px 4px 2px 1px #FFF, inset -1px -1px 4px #025;
+  border-radius: 4px;
 }
 #response {
   min-height: 80px;

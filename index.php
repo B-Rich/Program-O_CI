@@ -190,7 +190,7 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
-	define('CONFPATH', APPPATH.'config/');
+	define('CONFPATH', str_replace('/core', '', BASEPATH) . 'chatbot/config/');
 
 /*
  * --------------------------------------------------------------------
