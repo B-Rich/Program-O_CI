@@ -1,10 +1,5 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-$base_url = "http" . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "") . "://";
-$base_url .= isset($_SERVER['HTTP_HOST']) ?  $_SERVER['HTTP_HOST'] : $_SERVER['SERVER_NAME'];
-$bu = str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-$base_url .= "$bu/";
-
 $config = array();
 $config['base_url'] = $base_url;
 $config['index_page'] = '';
@@ -39,7 +34,7 @@ $config['cookie_domain'] = '';
 $config['cookie_path'] = '/';
 $config['cookie_secure'] = true;
 $config['global_xss_filtering'] = true;
-$config['csrf_protection'] = false;
+$config['csrf_protection'] = true;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;

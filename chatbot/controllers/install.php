@@ -15,6 +15,7 @@
 
     function index()
     {
+      if (!empty($_POST)) exit('<pre>' . print_r($_POST, true));
       if ($this->input->post('action') !== false)
       {
         $action = $this->input->post('action');
@@ -43,7 +44,7 @@
       $post = $this->input->post(NULL, TRUE);
       $errors = $this->session->userdata('errors');
       //$errors = $this->session->all_userdata();
-      if (!$errors || empty($errors || $errors === null)) $errors = array('Unspecified error. Check the server logs.');
+      if (!$errors || empty($errors) || $errors === null) $errors = array('Unspecified error. Check the server logs.');
       /*
       header('Content-type: text/plain');
       die('errors: ' . print_r($errors, true));

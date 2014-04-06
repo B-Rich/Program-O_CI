@@ -36,7 +36,6 @@
       var helpWindow = null; // global variable
       $(function() {
         var sWidth = $(window).width();
-        buildSelect('time_zone_locale');
         $('#save_stateSession').attr('checked', true);
         $('#adm_dbp_confirm').blur(function() {
           if (!validatePass()) {
@@ -55,14 +54,14 @@
         });
         $('#helpLink1').click(function(e) {
           e.preventDefault();
-          var url = 'install/help';
+          var url = 'help';
           helpPopups(url);
         });
         $('span.helpButton').attr('title','Click here to get help for the current item.');
         $('span.helpButton').click(function() {
           var tmpHash = $(this).attr('id');
           hash = tmpHash.replace('hb_','');
-          url = 'help.php#' + hash;
+          url = 'help#' + hash;
           helpPopups(url);
         });
         var emContent = $('.errMsg').html();
@@ -71,17 +70,6 @@
           $('.errMsg').css('display', 'block');
         }
       });
-      function buildSelect(id) {
-        var timezone = determine_timezone().timezone;
-        var thisLocale = timezone.olson_tz;
-        var label = '#' + id;
-        for(var tz in olson.timezones) {
-          var tmpTZ = olson.timezones[tz];
-          var val = tmpTZ.olson_tz;
-          $(label).addOption(val, val);
-        }
-        $(label).selectOptions(thisLocale);
-      }
       function helpPopups (url) {
         var options = 'left=150,top=100,width=800,height=600,scrollbars=1';
         if (helpWindow == null || helpWindow.closed) {

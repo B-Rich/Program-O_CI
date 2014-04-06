@@ -20,7 +20,7 @@
               </p>
               <p>
                 For more detailed information with this page, please see the <a href="#" id="helpLink1" title="Get help for this page" name="helpLink1">Help Page</a>, or
-                click the help icon <img src="http://localhost/Program-O/Program-O/admin/images/help_small.png" width="16" height="16" alt="" /> for an individual field.
+                click the help icon <img src="<?php echo base_url() ?>assets/images/help_small.png" width="16" height="16" alt="" /> for an individual field.
               </p>
               &nbsp;
             </td>
@@ -148,4 +148,4 @@
             </td>
           </tr>
         </table>
-      </form>
+      <?php echo form_close() ?>

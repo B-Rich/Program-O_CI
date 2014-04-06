@@ -374,8 +374,8 @@ div.row { clear: both; padding-top: 8px; border: none; width: 98%; margin-left: 
 
 /* Media Queries place after regular CSS or they don't always work */
 @media screen and (max-width: 800px){
-  #logo2 {
-    display: none;
+  #rightLogo {
+    background-image: none;
   }
 }
 
