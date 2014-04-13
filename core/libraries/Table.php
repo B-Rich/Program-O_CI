@@ -55,7 +55,7 @@ class CI_Table {
 	{
 		if ( ! is_array($template))
 		{
-			return FALSE;
+			return;
 		}
 
 		$this->template = $template;

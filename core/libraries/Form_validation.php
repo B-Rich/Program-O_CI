@@ -76,7 +76,7 @@ class CI_Form_validation {
 		// No reason to set rules if we have no POST data
 		if (count($_POST) == 0)
 		{
-			return $this;
+			return;
 		}
 
 		// If an array was passed via the first parameter instead of indidual string

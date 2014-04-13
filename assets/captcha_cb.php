@@ -216,11 +216,11 @@ match should allow the user access, while failure should be handled accordingly.
         $continue = false;
       }
       // Calculate color increments
-      $incrementRed   = ($baseGradientColor - $targetColorRed)   / $gradientWidth;
-      $incrementGreen = ($baseGradientColor - $targetColorGreen) / $gradientWidth;
-      $incrementBlue  = ($baseGradientColor - $targetColorBlue)  / $gradientWidth;
       #die("targetColorRed = $targetColorRed, targetColorGreen = $targetColorGreen, targetColorBlue = $targetColorBlue.<br />\nincrementRed = $incrementRed, incrementGreen = $incrementGreen, incrementBlue = $incrementBlue.<br />\nbaseGradientColor = $baseGradientColor, gradientWidth = $gradientWidth, incrementUpDown = $incrementUpDown.");
       if ($continue) {
+        $incrementRed   = ($baseGradientColor - $targetColorRed)   / $gradientWidth;
+        $incrementGreen = ($baseGradientColor - $targetColorGreen) / $gradientWidth;
+        $incrementBlue  = ($baseGradientColor - $targetColorBlue)  / $gradientWidth;
         for ($gradientIndex = 0; $gradientIndex <= $gradientWidth; $gradientIndex++) {
           $currentRedValue   = $baseGradientColor - ($gradientIndex * $incrementRed);
           $currentGreenValue = $baseGradientColor - ($gradientIndex * $incrementGreen);

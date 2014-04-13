@@ -8,6 +8,7 @@
  * view_main.php
  * Contains the HTML template for the Program O install page
  ****************************************************/
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -23,7 +24,7 @@
     <div id="leftLogo">&nbsp;</div>
     <div id="rightLogo">&nbsp;</div>
     <div id="title">
-      <div id="titlespan"><?php echo  $pageTitle ?></div>
+      <div id="titleSpan"><?php echo  $pageTitle ?></div>
     </div>
     <div id="container">
 <?php echo $content ?>

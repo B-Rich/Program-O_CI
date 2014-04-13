@@ -51,7 +51,7 @@ class Model_install extends CI_Model
     {
       $errors = $this->session->userdata('errors');
       if(!$errors || empty($errors) || $errors === null) $errors = array();
-      $errors[] = 'There was an error with the following SQL query:<br>' . PHP_EOL . "SQL = $sql<br>" . PHP_EOL;
+      $errors[] = 'There was an error with adding info to the admin table!';
       $this->session->set_userdata('errors', $errors);
     }
     return $result;

@@ -37,6 +37,7 @@
       $data['pageTitle'] = 'Program O Installation';
       $data['lowerScript'] = $this->load->view('view_install_js', null, true);
       $this->load->view('view_main', $data);
+      return;
     }
 
     function error()

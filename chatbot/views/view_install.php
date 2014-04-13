@@ -20,7 +20,7 @@
     <div class="errMsg"><?php echo (isset($errMsg)) ? $errMsg : '' ?></div>
     <div id="logo">&nbsp;</div>
     <div id="title">
-      <div id="titlespan">
+      <div id="titleSpan">
         <?php echo $pageTitle ?>
       </div>
     </div>
