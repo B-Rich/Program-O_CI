@@ -1,4 +1,4 @@
-﻿<script src="http://code.jquery.com/jquery-latest.js"></script>
+﻿<script type="text/javascript" src="<?php echo base_url('js') ?>/jquery.js"></script>
 <script type="text/JavaScript">
   $(document).ready(function() {
     $('#frmChat').submit(function(e){
@@ -7,6 +7,7 @@
       var url='<?php echo base_url() ?>assets/chat.php';
       var say = $('#say').val();
       var responseTemplate = "You: [say]<br>\n[botName]: [botsay]<br>\n";
+      $('#say').val('');
       $.ajax({
         url: url,
         type: 'POST',

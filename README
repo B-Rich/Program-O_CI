@@ -11,7 +11,7 @@
 
 Introduction
 ---------------------------------------------------------
-Program O is an AIML interpretor written in PHP, and uses a MySQL database to store chatbot information, including the AIML files used to formulate the chatbot's responses. This particular version uses a modified version of the CodeIgniter PHP framework.
+Program O is an AIML interpreter written in PHP, and uses a MySQL database to store chatbot information, including the AIML files used to formulate the chatbot's responses. This particular version uses a modified version of the CodeIgniter PHP framework.
 
 
 Configuration

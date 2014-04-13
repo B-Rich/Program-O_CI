@@ -15,8 +15,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title><?php echo $pageTitle ?></title>
     <link rel="shortcut icon" href="<?php echo base_url('assets/images') ?>/favicon.ico" />
-    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/jquery-ui.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo base_url('assets') ?>/program_o.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/css') ?>/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/css') ?>/program_o.css" type="text/css" />
   </head>
   <body>
     <div class="errMsg"><?php echo (isset($errMsg)) ? $errMsg : '' ?></div>
