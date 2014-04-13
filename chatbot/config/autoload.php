@@ -3,7 +3,7 @@
 $autoload = array();
 $autoload['packages'] = array();
 $autoload['libraries'] = array();
-$autoload['libraries'] = array('session');
+$autoload['libraries'] = array();
 $autoload['helper'] = array();
 $autoload['helper'][0] = 'url';
 $autoload['helper'][1] = 'file';

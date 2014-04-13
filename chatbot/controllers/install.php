@@ -201,8 +201,8 @@
       write_file($flexi_auth_config_save_file, $flexi_auth_config_content);
 
       # at this point, the config files are done, so let's move on to creating the DB tables.
-      $this->load->database();
-      $this->load->model('model_install');
+      //$this->load->database();
+      //$this->load->model('model_install');
       $success = $this->model_install->makeTables();
       if (!$success) return $this->error();
 
