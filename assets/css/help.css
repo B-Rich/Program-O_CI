@@ -12,8 +12,6 @@ div.row span.label {float: left; width: 49.5%; text-align: left; padding-left: 3
 div.row span.label:hover, div.row span.formw:hover {background-color: #EEE;}
 .center { text-align: center; }
 .bold { font-weight: bold; }
-.underline {border: 2px outset #666;border-top: 1px outset #666; border-left: 1px outset #666;}
-.big { font-size: larger; }
 #container{
   margin: 0 auto;
   padding: 1em;
@@ -27,9 +25,6 @@ div.row span.label:hover, div.row span.formw:hover {background-color: #EEE;}
       div.row span.label {
         width: 25%;
         margin-right: 12px;
-      }
-      .big {
-        font-size: x-large;
       }
       .description {
         background-color: transparent;
@@ -52,8 +47,20 @@ div.row span.label:hover, div.row span.formw:hover {background-color: #EEE;}
       .red {
         color: red;
         font-weight: bold;
+          padding: 0 5px;
       }
-      row.underline {border: 2px outset #666;border-top: 1px outset #666; border-left: 1px outset #666;}
+      .underline {
+          box-shadow: 0px 3px 4px 1px #000;
+          margin-bottom: 9px;
+      }
+    .big {
+      font-size: x-large;
+      line-height: 120%;
+      margin: 9px 0;
+        box-shadow: 0px 3px 4px 1px #000;
+        background: url('../images/sectionHeader.png') repeat-x scroll 0% 0%;
+        text-shadow: 1px 2px 3px #666;
+    }
 @media screen and (max-width: 1280px){
   body {
     padding: 0;
@@ -65,7 +72,7 @@ div.row span.label:hover, div.row span.formw:hover {background-color: #EEE;}
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 0.51px;
   }
   #form_table {
     width: 100%;

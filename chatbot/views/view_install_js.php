@@ -9,9 +9,9 @@
  * Provides the necessary JavaScript code for the install page
  ****************************************************/
 ?>
-    <script type="text/javascript" src="<?php echo base_url('assets/scripts') ?>/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo base_url('assets/scripts') ?>/jquery-ui.js"></script>
-    <script type="text/javascript" src="<?php echo base_url('assets/scripts') ?>/jquery.validate.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js') ?>/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js') ?>/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js') ?>/jquery.validate.js"></script>
     <script type="text/javascript">
       var rowHeight = 16.5;
       var url = 'about:blank';

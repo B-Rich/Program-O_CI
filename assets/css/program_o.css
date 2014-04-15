@@ -90,7 +90,7 @@ input, select {vertical-align:middle;}
 html, body  {height: 100%;}
 body {
 
-  background: #9FC03A url(../images/body_fade.png) repeat-x;
+  background: #DDE url(../images/body_fade.png) repeat-x;
   /*background: #DDE none;*/
   color: #000000;
   margin: 0;

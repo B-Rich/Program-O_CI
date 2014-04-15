@@ -9,7 +9,7 @@
  * Contains the Javascript code for the install script's help page.
  ****************************************************/
 ?>
-    <script type="text/javascript" src="<?php echo base_url('assets/scripts') ?>/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/js') ?>/jquery.js"></script>
     <script type="text/javascript">
       function highlight() {
         var myHash = location.hash;

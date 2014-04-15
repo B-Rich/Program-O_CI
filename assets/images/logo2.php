@@ -48,9 +48,11 @@
     imageline($bkg,512,128-$y0,512-$x1, 0, $red);
   }
 
-  //imagestring($bkg,3,225,110,'Image script (c)2013 Geek Cave Creations', $red);
-  imagettftext($bkg, 14, 0, 146,121,$white,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
-  imagettftext($bkg, 14, 0, 145,120,$green,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
+  imagettftext($bkg, 14, 0, 18,123,$shadow1,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
+  imagettftext($bkg, 14, 0, 17,122,$tColor,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
+  imagettftext($bkg, 14, 0, 15,120,$white,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
+  imagettftext($bkg, 14, 0, 16,121,$green,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
+  imagettftext($bkg, 14, 0, 16,121,$green,'../fonts/BAZOOKA.TTF','Image script ©2013 Geek Cave Creations');
 
   # display the image
   header('Content-type: image/png');

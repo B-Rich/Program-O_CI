@@ -33,7 +33,7 @@
       $formVars['domain'] = $_SERVER['HTTP_HOST'];
       $formVars['path'] = str_replace('/chatbot', '', APPPATH);
       #$data['content'] = $this->load->view('view_install_form', $formVars, true);
-      $data['content'] = $this->load->view('view_install_form_no_table', $formVars, true);
+      $data['content'] = $this->load->view('view_install_form', $formVars, true);
       $data['pageTitle'] = 'Program O Installation';
       $data['lowerScript'] = $this->load->view('view_install_js', null, true);
       $this->load->view('view_main', $data);
