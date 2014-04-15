@@ -4,7 +4,7 @@ $active_group = 'default';
 
 $db = array();
 $db['default'] = array();
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'mysql:host=localhost';
 $db['default']['username'] = 'pgo_user';
 $db['default']['password'] = 'pgo_pass';
 $db['default']['database'] = 'programo';
