@@ -1,21 +1,21 @@
 <?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-$active_group = 'default';
+$active_group = 'PGODB';
 
 $db = array();
-$db['default'] = array();
-$db['default']['hostname'] = 'mysql:host=localhost';
-$db['default']['username'] = 'pgo_user';
-$db['default']['password'] = 'pgo_pass';
-$db['default']['database'] = 'programo';
-$db['default']['dbdriver'] = 'pdo';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['PGODB'] = array();
+$db['PGODB']['hostname'] = 'mysql:host=localhost';
+$db['PGODB']['username'] = 'pgo_user';
+$db['PGODB']['password'] = 'pgo_pass';
+$db['PGODB']['database'] = 'programo';
+$db['PGODB']['dbdriver'] = 'pdo';
+$db['PGODB']['dbprefix'] = '';
+$db['PGODB']['pconnect'] = TRUE;
+$db['PGODB']['db_debug'] = TRUE;
+$db['PGODB']['cache_on'] = FALSE;
+$db['PGODB']['cachedir'] = '';
+$db['PGODB']['char_set'] = 'utf8';
+$db['PGODB']['dbcollat'] = 'utf8_general_ci';
+$db['PGODB']['swap_pre'] = '';
+$db['PGODB']['autoinit'] = TRUE;
+$db['PGODB']['stricton'] = FALSE;

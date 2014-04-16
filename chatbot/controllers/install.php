@@ -27,7 +27,7 @@
       if($errMsg !== false) $data['errMsg'] = $errMsg;
       $this->session->set_userdata('errors', null);
       $attributes = array('name' => 'installForm', 'id' => 'installForm',);
-      $form = form_open('install', $attributes);
+      $form = form_open('install/save_data', $attributes);
       $formVars['formOpenTag'] = $form;
       $formVars['post'] = $post;
       $formVars['domain'] = $_SERVER['HTTP_HOST'];
@@ -100,7 +100,32 @@
 
     function save_data()
     {
-      global $active_group;
+      include CONFPATH . 'database.php';
+      echo ('config = <pre>' . print_r($db, true) . "\n");
+      echo '$db["PGODB"] = array(' . PHP_EOL;
+      foreach ($db['PGODB'] as $key => $value)
+      {
+        echo "  '$key' => '";
+        switch (true)
+        {
+          case (is_string($value)):
+            echo "'$value',\n";
+            break;
+          case (is_bool($value)):
+            echo ($value) ? "true,\n" : "false,\n";
+            break;
+          case (is_numeric($value)):
+            echo $value . ",\n";
+            break;
+          case (empty($value)):
+            echo "'',\n";
+            break;
+          default:
+            echo "'$value',\n";
+        }
+      }
+      echo ");\n</pre>\n";
+      exit();
       $fieldTitles = array(
         'botmaster_name' => 'You have to provide a name.',
         'debugemail' => 'Your email address seems to be missing.',

@@ -24,8 +24,9 @@ class Program_o extends CI_Controller
   {
     if(false === $this->config->item('is_installed'))
     {
-      //redirect('install');
+      redirect('install');
       //$this->config->set_item('is_installed', true);
+ /*
       $basePath = str_replace('/core', '', BASEPATH) . 'chatbot/config/';
       $basePath = CONFPATH;
       $configFile = $basePath . 'config.php';
@@ -40,19 +41,18 @@ class Program_o extends CI_Controller
       $data['lowerScript'] = $this->load->view('view_chat_js.php', null, true);
       //$data['lowerScript'] = '';
       $this->load->view('view_main', $data);
+ */
     }
     else{
-      $is_installed = ($this->config->item('is_installed')) ? 'true' : 'false';
       $data['pageTitle'] = 'Program O Interface';
       $data['content'] = $this->load->view('view_chatForm', null, true);
       $data['lowerScript'] = $this->load->view('view_chat_js.php', null, true);
-      //$data['lowerScript'] = '';
       $this->load->view('view_main', $data);
     }
   }
 
 }
-
+/*
     function install()
     {
       $this->load->helper('form');
@@ -79,7 +79,7 @@ class Program_o extends CI_Controller
       $data['lowerScript'] = $this->load->view('view_install_js', null, true);
       $this->load->view('view_main', $data);
     }
-
+*/
     function help()
     {
        $this->load->view('view_install_help');

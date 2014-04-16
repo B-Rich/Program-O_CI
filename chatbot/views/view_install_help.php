@@ -115,17 +115,16 @@
             <b>Show Everything</b> The results from a vast number of
             operations, calculations or function calls (sometimes
             several times within certain functions) is generated.
-            <b>WARNING!</b> <span class="c1">HUGE</span> amounts of
-            data is generated with this setting, to the point where
-            script performance will be affected, especially if the
-            debug output method is set to "Show in Source". And for
-            God's sake, <b>DON'T</b> use this if you're going to
-            have debugging data sent to your email!
+            <b class="red">WARNING!</b> <span class="c1">HUGE</span>
+            amounts of data are generated with this setting, to the point
+            where script performance will be affected. Unless you're running
+            Program O in development mode, it's strongly suggested that
+            you not use this setting.
           </li>
         </ul>
-        For the most part, this should be set to "Nothing",
-        unless you're trying to trace a problem with your AIML
-        files, and even then, it's best to only use "General". The
+        For the most part, this should be set to "No Debugging", or
+        "Errors Only" unless you're trying to trace a problem with your
+        AIML files, and even then, it's best to only use "General". The
         only time the other two settings should be used is to
         troubleshoot the script itself.
       </div>
@@ -146,6 +145,20 @@
       do not allow their customers to create new databases except
       through their web hosting control panels. Please have the
       database connection information ready at this point.
+    </div>
+    <div class="row" id="dbDriver">
+      <span class="label">Database Driver</span>
+      <div class="description">
+        Default (if present): PDO<br>
+        If this setting is available, then you have a choice of which
+        database driver to use with Program O. Please note that this is
+        an advanced setting, and really doesn't need to be altered, but
+        for people with advanced PHP experience, it gives you a choice
+        between PDO (PHP Data Objects) and MySQLi drivers. Either will
+        work just fine, but some folks may like to have a choice. If you
+        don't see this option during the install process, then your web
+        hosting provider doesn't provide PHP with PDO enabled.
+      </div>
     </div>
     <div class="row" id="dbh">
       <span class="label">Database Host Name</span>

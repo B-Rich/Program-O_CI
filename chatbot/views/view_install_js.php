@@ -16,9 +16,10 @@
       var rowHeight = 16.5;
       var url = 'about:blank';
       var helpWindow = null; // global variable
-      var availableHeight = $(window).height() - $('#container').position().top - 40;
+      var container = $('#container');
+      var availableHeight = $(window).height() - container.position().top - 40;
       //alert('height = ' + availableHeight);
-      $('#container').height(availableHeight);
+      container.height(availableHeight);
       $(function() {
         var sWidth = $(window).width();
         $('#save_stateSession').attr('checked', true);
@@ -43,8 +44,7 @@
 
           helpPopups(url);
         });
-        $('span.helpButton').attr('title','Click here to get help for the current item.');
-        $('span.helpButton').click(function() {
+        $('span.helpButton').attr('title','Click here to get help for the current item.').click(function() {
           var tmpHash = $(this).attr('id');
           hash = tmpHash.replace('hb_','');
           url = '<?php echo base_url('install/help') ?>#' + hash;
@@ -57,7 +57,7 @@
         }
       });
       function helpPopups (url) {
-        var options = 'location=1,menubar=1,toolbar=1,left=150,top=100,width=800,height=600,scrollbars=1';
+        var options = 'location=1,menubar=1,toolbar=1,left=150,top=100,width=801,height=600,scrollbars=1';
         if (helpWindow == null || helpWindow.closed) {
           helpWindow = window.open(url,'helpWindow',options,true);
           setTimeout(function(){helpWindow.highlight()},500);

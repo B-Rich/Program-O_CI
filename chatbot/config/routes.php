@@ -2,5 +2,3 @@
 
 $route = array();
 $route['default_controller'] = 'program_o';
-//$route['help'] = 'help';
-$route['404_override'] = '';
