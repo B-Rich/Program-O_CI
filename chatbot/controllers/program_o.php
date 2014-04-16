@@ -17,6 +17,7 @@ class Program_o extends CI_Controller
   {
 
     parent::__construct();
+    $this->load->config('pgo_config');
 
   }
 
