@@ -1,0 +1,19 @@
+/****************************************************
+ * Program O AIML Interpreter/Chatbot Engine
+ * Version 3.5.0 - CodeIgniter implementation
+ * Written/Coded by Dave Morton
+ * ©2012-2013 The Program O Group
+ * Written 05-24-2104
+ * TODO
+ *
+ ****************************************************/
+
+As of 5/24/14, this is the list of tasks still needed to be undertaken before
+Program O_CI can be released:
+
+1.) Design the DB, including adding new tables for the membership system, SRAI lookup,
+    and any other new features that will require a DB table.
+2.) Redesign the admin pages to be more modular, handle all of the new features, and be
+    more mobile-friendly.
+3.) Create reliable algorithms to handle <set> and <bot> tags in the AIML pattern searches.
+4.) Create similar algorithms to parse AIML templates that support nested tags.

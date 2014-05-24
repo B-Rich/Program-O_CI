@@ -1,0 +1,80 @@
+This document outlines the various tags available in AIML 1.0.1
+For now, only tags contained within the <template> tag are described.
+In the near future, I'll be adding descriptions for tags that can be
+found within the <pattern> tag, and then additional tags used in AIML 2.0
+
+AIML 1.0.1 tags that can be used within the <template> tag:
+-----------------------------------------------------------
+star
+that
+input 
+thatstar 
+topicstar 
+get 
+bot 
+person2
+person
+gender
+date
+id
+size
+version
+uppercase
+lowercase
+formal
+sentence
+condition
+random
+li
+set
+gossip
+sr (atomic alias for <srai><star/></srai>)
+srai
+person2
+person
+gender
+think
+system (possible security problem, so should have an option to disable)
+javascript
+
+Pandorabots extensions to standard AIML:
+-----------------------
+condition           (* added to value to denote an undefined value)
+li                  (* added to value to denote an undefined value)
+date                (attributes added - see below)
+that                (multi-sentence version - uses index="N,*")
+request             (multi-sentence version of <input>)
+response            (multi-sentence version of template-side <that>)
+learn (handled differently than standard, and used with eval, below)
+eval
+
+Tags that ~CAN~ contain attributes:
+Tag name            Attribute(s)        Special*
+------------------------------------------------
+star                index
+that                index               "M,N"
+input               index
+thatstar            index
+topicstar           index
+get                 name
+bot                 name
+condition           name, value
+li                  name, value
+set                 name
+date                locale, timezone, format
+request             index
+response            index
+
+Tags that ~MUST~ contain attributes (AIML 1.0 only):
+Tag name            Attribute(s)
+----------------------------------
+SET                 index
+get                 name
+bot                 name
+
+Tags with atomic versions that use <star/> as content:
+------------------------------------------------------
+sr
+person
+person2
+gender
