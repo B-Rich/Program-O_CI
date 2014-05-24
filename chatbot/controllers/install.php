@@ -27,7 +27,7 @@
       if($errMsg !== false) $data['errMsg'] = $errMsg;
       $this->session->set_userdata('errors', null);
       $attributes = array('name' => 'installForm', 'id' => 'installForm',);
-      $form = form_open('install/save_data', $attributes);
+      $form = form_open('install', $attributes);
       $formVars['formOpenTag'] = $form;
       $formVars['post'] = $post;
       $formVars['domain'] = $_SERVER['HTTP_HOST'];
@@ -38,6 +38,11 @@
       $data['lowerScript'] = $this->load->view('view_install_js', null, true);
       $this->load->view('view_main', $data);
       return null;
+    }
+    function foo()
+    {
+      $post = $this->input->post(null,true);
+      exit("POST = " . print_r($_POST, true));
     }
 
     function error()
@@ -98,12 +103,15 @@
       $this->load->view('view_main', $data);
     }
 
-    function save_data()
+    function saveData()
     {
-      # First, let's get the form data, and both general and DB config arrays
+      # First, let's get both general and DB config arrays
+      include CONFPATH . 'pgo_config.php';   // load the variable $config from pgo_config.php
+      include CONFPATH . 'database.php'; // load the variable $db
+
+      # Next, get the form variables
       $post = $this->input->post(null, true);
-      include CONFPATH . 'config.php';
-      include CONFPATH . 'database.php';
+      exit("<pre>\nPOST vars:\n" . print_r($post, true));
 /*
       echo ('config = <pre>' . print_r($db, true) . "\n");
       echo '$db["PGODB"] = array(' . PHP_EOL;

@@ -2,3 +2,4 @@
 
 $route = array();
 $route['default_controller'] = 'program_o';
+//$route['install'] = 'install';
